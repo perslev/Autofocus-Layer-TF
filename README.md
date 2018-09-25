@@ -6,6 +6,8 @@ Yao Qin, Konstantinos Kamnitsas, Siddharth Ancha, Jay Nanavati, Garrison Cottrel
 
 Note: I am not among the authors, there may be differences between this implementation and the one suggested by the authors.
 
+See https://github.com/yaq007/Autofocus-Layer for PyTorch implementation.
+
 ## Use
 The layer can be used as a drop-in replacement of the tf.keras.layers.Conv2D layer:
 
