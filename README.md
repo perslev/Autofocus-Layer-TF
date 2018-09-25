@@ -12,7 +12,6 @@ The layer can be used as a drop-in replacement of the tf.keras.layers.Conv2D lay
 ```python
 from autofocus import Autofocus2D
 import tensorflow as tf
-import numpy as np
 
 # Dilation rates, here 4 parallel conv applications
 dilations = [1, 2, (3, 3), (4, 6)]
@@ -27,8 +26,7 @@ model = tf.keras.Sequential([
                 attention_activation=tf.nn.relu,
                 attention_filters=10,
                 attention_kernel_size=3,
-                use_bn=True,
-                use_bias=True),
+                use_bn=True),
     tf.keras.layers.Conv2D(10, 3, activation="relu")
     # etc....
 ])
