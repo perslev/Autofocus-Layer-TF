@@ -9,7 +9,7 @@ Note: I am not among the authors, there may be differences between this implemen
 ## Use
 The layer can be used as a drop-in replacement of the tf.keras.layers.Conv2D layer:
 
-"""python
+```python
 from autofocus import Autofocus2D
 import tensorflow as tf
 import numpy as np
@@ -38,4 +38,4 @@ in_ = tf.constant(np.random.rand(64, 128, 128, 3).astype(np.float32))
 model(in_)
 
 print(model.summary())
-"""
+```
