@@ -32,10 +32,4 @@ model = tf.keras.Sequential([
     tf.keras.layers.Conv2D(10, 3, activation="relu")
     # etc....
 ])
-
-# Build model by passing random data...
-in_ = tf.constant(np.random.rand(64, 128, 128, 3).astype(np.float32))
-model(in_)
-
-print(model.summary())
 ```
