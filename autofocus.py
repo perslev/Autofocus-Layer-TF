@@ -5,7 +5,6 @@ from tensorflow.python.ops import nn_ops
 from tensorflow.python.framework import tensor_shape
 from tensorflow.python.keras.engine.base_layer import InputSpec
 from tensorflow.python.keras.utils import conv_utils
-from keras.layers import Lambda
 
 
 class Autofocus2D(Conv2D):
@@ -268,7 +267,3 @@ class Autofocus2D(Conv2D):
             # Activation function on output if specified
             return self.activation(output)
         return output
-
-
-def KerasAutofocus2D(*args, **kwargs):
-    return Lambda(Autofocus2D(*args, **kwargs))
